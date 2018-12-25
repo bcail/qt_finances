@@ -1,0 +1,8 @@
+cmake_minimum_required (VERSION 3.6)
+project (QtFinances)
+set(CMAKE_AUTOMOC ON)
+enable_testing()
+find_package(Qt5 COMPONENTS Core Test REQUIRED)
+add_executable(tests tests.cpp)
+add_test(tests tests)
+target_link_libraries(tests Qt5::Core Qt5::Test)
