@@ -1,4 +1,6 @@
 language: cpp
-before_install: sudo apt-get install -y qtbase5-dev
-script: cmake . && make && make test
+before_install: sudo apt-get install -y qtbase5-dev cppcheck
+script:
+    - cmake . && make && make test
+    - cppcheck tests.cpp
 
