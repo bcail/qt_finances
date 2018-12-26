@@ -10,8 +10,6 @@ private slots:
 
 void TestQtFinances::testAccount()
 {
-    char a[10];
-    a[10] = 0;
     QVERIFY(true);
 }
 
