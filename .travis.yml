@@ -2,5 +2,5 @@ language: cpp
 before_install: sudo apt-get install -y qtbase5-dev cppcheck
 script:
     - cmake . && make && make test
-    - cppcheck tests.cpp
+    - cppcheck --error-exitcode=2 tests.cpp
 
